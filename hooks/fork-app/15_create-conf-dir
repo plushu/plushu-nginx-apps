@@ -3,4 +3,4 @@ set -eo pipefail; [[ -n "$PLUSHU_TRACE" ]] && set -x
 
 app=$1
 
-mkdir "$PLUSHU_ROOT/nginx/apps/$app"
+mkdir -p "$PLUSHU_ROOT/nginx/apps/$app"
