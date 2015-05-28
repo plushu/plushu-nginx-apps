@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -eo pipefail; [[ -n "$PLUSHU_TRACE" ]] && set -x
+
+# Destroy this app's nginx .conf files
+rm -rf "$PLUSHU_ROOT/nginx/apps/$1"

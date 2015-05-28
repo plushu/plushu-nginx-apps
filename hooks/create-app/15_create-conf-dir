@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -eo pipefail; [[ -n "$PLUSHU_TRACE" ]] && set -x
+
+app=$1
+
+mkdir "$PLUSHU_ROOT/nginx/apps/$app"
